@@ -123,6 +123,11 @@ services:
     build: ./user_data_service
     ports:
       - "8005:8005"
+  
+  read-data-service:
+    build: ./read_data_service
+    ports:
+      - "8008:8008"
 secrets:
   kong_postgres_password:
     file: ./POSTGRES_PASSWORD
